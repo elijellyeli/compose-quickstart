@@ -9,11 +9,13 @@ blocks:
   has_callback: false
   language: python
   name: load_video
-  status: updated
+  retry_config: null
+  status: executed
+  timeout: null
   type: data_loader
   upstream_blocks: []
   uuid: load_video
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks: []
@@ -22,18 +24,30 @@ blocks:
   has_callback: false
   language: python
   name: get_avg
+  retry_config: null
   status: updated
+  timeout: null
   type: transformer
   upstream_blocks:
   - load_video
   uuid: get_avg
 callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: null
 data_integration: null
 description: null
+executor_config: {}
 executor_count: 1
+executor_type: null
 extensions: {}
-name: young waterfall
+name: load video
+notification_config: {}
+retry_config: {}
+run_pipeline_in_one_process: false
+spark_config: {}
+tags: []
 type: python
-updated_at: '2023-09-19 17:24:45'
-uuid: young_waterfall
+updated_at: '2023-09-19 18:53:14'
+uuid: load_video
 widgets: []
