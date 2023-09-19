@@ -169,4 +169,6 @@ node_modules
 scratch*
 /mage_data*
 *secrets*.json
-your-first-project
+your-first-project/.file_versions/
+# your-first-project
+

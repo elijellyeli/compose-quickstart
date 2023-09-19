@@ -1,0 +1,39 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - get_avg
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_video
+  status: updated
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_video
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: get_avg
+  status: updated
+  type: transformer
+  upstream_blocks:
+  - load_video
+  uuid: get_avg
+callbacks: []
+data_integration: null
+description: null
+executor_count: 1
+extensions: {}
+name: young waterfall
+type: python
+updated_at: '2023-09-19 17:24:45'
+uuid: young_waterfall
+widgets: []
